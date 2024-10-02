@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container{
+  background: #2d2c2c;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+
+
+ 
+  gap: 0.4rem;
+  padding-left: 8rem;
+  padding-top: 4rem;
+  grid-template-rows: repeat(9,1fr);
+ grid-template-columns: repeat(10,1fr);
+}
+
+.item{
+  background-color: #119c31;
+  border: 2px solid black;
+  color: white;
+  display: flex;
+  /* height: 100%;
+  width: 100%; */
+  /* padding: 6.5rem; */
+  place-self: stretch;
+  
+  
+
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size:xx-large;
+  font-weight: bolder;
+  text-shadow: #2d2c2c;
+  color: rgb(21, 92, 112);
+}
+
+.pencil{
+  grid-row-start:1 ;
+  grid-row-end:6;
+
+  grid-column-start:1 ;
+  grid-column-end: 4;
+
+  background-color: rgb(255, 11, 11);
+
+  border-radius: 20px 0 0 0;
+}
+.no-visibibility{
+  grid-row-start:1 ;
+  grid-row-end:6;
+
+  grid-column-start:7 ;
+  grid-column-end:10;
+
+  background-color: rgb(73, 73, 179);
+
+  border-radius: 0 20px 0 0;
+}
+.number{
+  grid-row-start:1 ;
+  grid-row-end:3;
+
+  grid-column-start:4;
+  grid-column-end:7;
+
+  background: rgb(244, 244, 176);
+}
+.name{
+  
+  grid-row-start:3 ;
+  grid-row-end:6;
+
+  grid-column-start:4 ;
+  grid-column-end: 7;
+
+  background-color: black;
+  text-align: center;
+}
+
+.name img{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 50%;
+  
+
+}
+.work{
+  grid-row-start:6 ;
+  grid-row-end:9;
+
+  grid-column-start:1 ;
+  grid-column-end: 6;
+
+  background-color: rgb(20, 176, 20);
+
+  border-radius: 0 0 0 20px;
+}
+.fear{
+  grid-row-start:6 ;
+  grid-row-end:9;
+
+  grid-column-start:6 ;
+  grid-column-end: 10;;
+
+  background: rgb(75, 181, 177);
+
+  border-radius: 0 0 20px 0;
+}
